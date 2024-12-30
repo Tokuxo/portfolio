@@ -1,0 +1,39 @@
+body {
+  background-image: url("Processed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  padding: 0.05vh;
+  background-color: darkslategray;
+}
+ul {
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+button {
+  border: none;
+  font-size: 2vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
+  padding: 1vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  color: aliceblue;
+}
+#current {
+  background-color: rgb(69, 107, 107);
+  border-radius: 2vw;
+}
+#redirect {
+  background-color: darkslategray;
+}
+#current:hover {
+  background-color: rgb(61, 97, 97);
+}
+#redirect:hover {
+  background-color: rgb(40, 66, 66);
+}
