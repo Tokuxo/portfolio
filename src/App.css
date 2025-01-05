@@ -17,7 +17,7 @@ li {
   display: inline-block;
 }
 
-button {
+li button {
   border: none;
   font-size: 1vw;
   margin-right: 4vw;
@@ -45,18 +45,39 @@ button {
   background-color: rgb(40, 66, 66);
 }
 
-div.current {
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 div.redirect {
   display: none;
 }
 
-p {
+#title {
   font-size: 2vw;
   font-weight: bold;
-  color: aliceblue
+  color: aliceblue;
+  text-align: center;
+}
+
+img {
+  width: 24.4vw;
+  height: auto;
+  float: left;
+  padding-left: 4vw;
+}
+
+#content {
+  font-size: 2vw;
+  padding: 3vw;
+  padding-left: 30vw;
+  text-align: right;
+  color: aliceblue;
+  background-color: rgba(45, 255, 237, 0.103);
+}
+
+p button {
+  font-size: 2vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: aliceblue;
+}
+p button:hover {
+  background-color: rgba(127, 255, 212, 0.164);
 }

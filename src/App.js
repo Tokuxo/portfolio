@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import React, { use, useState } from 'react';
+import fumoImage from './Fumo.gif';
 import './App.css';
 
 function App() {
@@ -23,8 +24,17 @@ function App() {
           </ul>
         </div>
         <div className={elementId[0]}>
-          <p>Introduction to Modeler Tokuxo</p>
-          <img src="Fumo.jpg" alt="wheres my fucking fumo"></img>
+          <p id='title'>Introduction to Modeler Tokuxo</p>
+          <div>
+            <img src={fumoImage} alt="wheres my fucking fumo"></img>
+            <p id='content'>Hi, I'm Tokuxo, the Modeler of your choice <br></br>
+              with 2 years of blender experience <br></br>
+              I will assist you through your game development <br></br>
+              This includes providing assets, accessories, and renders <br></br><br></br><br></br><br></br>
+              Click the <button type='button' onClick={() => changeId(1)}>"Past Work"</button> tab to see my work <br></br>
+              Click the <button type='button' onClick={() => changeId(2)}>"Info"</button> tab to see how to contact me <br></br>
+            </p>
+          </div>
         </div>
         <div className={elementId[1]}>
           <h1>1</h1>
