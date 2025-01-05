@@ -2,22 +2,23 @@ body {
   background-image: url("Processed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden
 }
 
 div.topMenu {
-  padding: 0.05vh;
+  padding: 0.05vw;
   background-color: darkslategray;
 }
 
-ul {
+div.topMenu ul {
   text-align: center;
 }
 
-li {
+div.topMenu ul li {
   display: inline-block;
 }
 
-li button {
+div.topMenu ul li button {
   border: none;
   font-size: 1vw;
   margin-right: 4vw;
@@ -56,7 +57,7 @@ div.redirect {
   text-align: center;
 }
 
-img {
+#Side {
   width: 24.4vw;
   height: auto;
   float: left;
@@ -80,4 +81,44 @@ p button {
 }
 p button:hover {
   background-color: rgba(127, 255, 212, 0.164);
+}
+
+#dicordLink {
+  color: aliceblue;
+}
+#dicordLink:hover {
+  color: rgb(141, 202, 255);
+}
+
+#content ul{
+  text-align: right;
+  list-style: none;
+}
+
+#scrollable {
+  width: 100%;
+  height: 45vw;
+  overflow-y: scroll;
+}
+
+
+#Display{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  border-radius: 10%;
+}
+
+.WIP{
+  font-size: 1.5vw;
+  color: aliceblue;
+  text-align: center;
+}
+
+#Throbber{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20vw;
 }

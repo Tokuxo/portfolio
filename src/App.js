@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React, { use, useState } from 'react';
 import fumoImage from './Fumo.gif';
+import Image1 from './PastWorks/1.png'
 import './App.css';
 
 function App() {
@@ -26,21 +27,51 @@ function App() {
         <div className={elementId[0]}>
           <p id='title'>Introduction to Modeler Tokuxo</p>
           <div>
-            <img src={fumoImage} alt="wheres my fucking fumo"></img>
-            <p id='content'>Hi, I'm Tokuxo, the Modeler of your choice <br></br>
-              with 2 years of blender experience <br></br>
+            <img src={fumoImage} alt="wheres my fucking fumo" id='Side'></img>
+            <p id='content'>Hi, <b>I'm Tokuxo</b>, the Modeler of your choice <br></br>
+              with <b>2 years</b> of blender experience <br></br>
               I will assist you through your game development <br></br>
-              This includes providing assets, accessories, and renders <br></br><br></br><br></br><br></br>
+              <b>This includes providing you</b>
+              <ul>
+                <li>Assets</li><li>ACcessories</li><li>Renders</li>
+              </ul>
               Click the <button type='button' onClick={() => changeId(1)}>"Past Work"</button> tab to see my work <br></br>
-              Click the <button type='button' onClick={() => changeId(2)}>"Info"</button> tab to see how to contact me <br></br>
+              Click the <button type='button' onClick={() => changeId(2)}>"Contact"</button> tab to see how to contact me <br></br>
             </p>
           </div>
         </div>
         <div className={elementId[1]}>
-          <h1>1</h1>
+          <div id='scrollable'>
+            <p id='title'>Past Works</p>
+            <div id='images'>
+              <img src={Image1} id='Display'></img>
+            </div>
+            <br></br><br></br>
+            <hr></hr>
+            <br></br>
+            <div className='WIP'>
+              <h3> &lt; more images will be updated &gt;</h3>
+              <img src={fumoImage} id='Throbber'></img>
+            </div>
+          </div>
         </div>
         <div className={elementId[2]}>
-          <h1>2</h1>
+          <p id='title'>Contacting Method</p>
+            <div>
+              <img src={fumoImage} alt="wheres my fucking fumo" id='Side'></img>
+              <p id='content'>If you have considered to hire me, you may DM me in <a id='dicordLink' href='https://discordapp.com/channels/@tokuxo/904626967972806666'>Discord</a> <br></br>
+                My user name is tokuxo<br></br>
+                <b>Please contain the Followings in your Message</b>
+                <ul>
+                  <li>Objective(s)</li>
+                  <li>Pricing</li>
+                  <li>Due Date</li>
+                  <li>Reference(s)</li>
+                  <li>Short Game Description (optional)</li>
+                  <sub>DM that lacks any of the items above will be ignored</sub>
+                </ul>
+              </p>
+          </div>
         </div>
       </header>
     </div>
