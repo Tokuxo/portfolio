@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import React, { use, useState } from 'react';
 import fumoImage from './Fumo.gif';
 import Image1 from './PastWorks/1.png'
+import Image2 from './PastWorks/2.png'
 import './App.css';
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
               I will assist you through your game development <br></br>
               <b>This includes providing you</b>
               <ul>
-                <li>Assets</li><li>ACcessories</li><li>Renders</li>
+                <li>Assets</li><li>Accessories</li><li>Renders</li>
               </ul>
               Click the <button type='button' onClick={() => changeId(1)}>"Past Work"</button> tab to see my work <br></br>
               Click the <button type='button' onClick={() => changeId(2)}>"Contact"</button> tab to see how to contact me <br></br>
@@ -43,14 +44,15 @@ function App() {
         <div className={elementId[1]}>
           <div id='scrollable'>
             <p id='title'>Past Works</p>
-            <div id='images'>
-              <img src={Image1} id='Display'></img>
+            <div className='Display'>
+              <img src={Image1}></img>
+              <img src={Image2}></img>
             </div>
             <br></br><br></br>
             <hr></hr>
             <br></br>
             <div className='WIP'>
-              <h3> &lt; more images will be updated &gt;</h3>
+              <h3> &lt; more images will be placed &gt;</h3>
               <img src={fumoImage} id='Throbber'></img>
             </div>
           </div>

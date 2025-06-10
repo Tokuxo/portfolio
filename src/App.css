@@ -102,13 +102,6 @@ p button:hover {
 }
 
 
-#Display{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80vw;
-  border-radius: 10%;
-}
 
 .WIP{
   font-size: 1.5vw;
@@ -121,4 +114,19 @@ p button:hover {
   margin-left: auto;
   margin-right: auto;
   height: 20vw;
+}
+
+.Display img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  border-radius: 10%;
+  padding-bottom: 4vw;
+}
+.Display p{
+  text-align: center;
+  color: aliceblue;
+  font-size: 2vw;
+  padding-bottom: 4vw;
 }
