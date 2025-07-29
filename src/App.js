@@ -3,6 +3,8 @@ import React, { use, useState } from 'react';
 import fumoImage from './Fumo.gif';
 import Image1 from './PastWorks/1.png'
 import Image2 from './PastWorks/2.png'
+import Image3 from './PastWorks/3.png'
+import Image4 from './PastWorks/4.png'
 import './App.css';
 
 function App() {
@@ -30,14 +32,14 @@ function App() {
           <div>
             <img src={fumoImage} alt="wheres my fucking fumo" id='Side'></img>
             <p id='content'>Hi, <b>I'm Tokuxo</b>, the Modeler of your choice <br></br>
-              with <b>2 years</b> of blender experience <br></br>
+              with <b>4 years</b> of blender experience <br></br>
               I will assist you through your game development <br></br>
-              <b>This includes providing you</b>
+              <b>Providing you</b>
               <ul>
                 <li>Assets</li><li>Accessories</li><li>Renders</li>
               </ul>
-              Click the <button type='button' onClick={() => changeId(1)}>"Past Work"</button> tab to see my work <br></br>
-              Click the <button type='button' onClick={() => changeId(2)}>"Contact"</button> tab to see how to contact me <br></br>
+              Click <button type='button' onClick={() => changeId(1)}>"Past Work"</button> tab to see my work <br></br>
+              Click <button type='button' onClick={() => changeId(2)}>"Contact"</button> tab to see how to contact me <br></br>
             </p>
           </div>
         </div>
@@ -45,8 +47,10 @@ function App() {
           <div id='scrollable'>
             <p id='title'>Past Works</p>
             <div className='Display'>
-              <img src={Image1}></img>
               <img src={Image2}></img>
+              <img src={Image3}></img>
+              <img src={Image4}></img>
+              <img src={Image1}></img>
             </div>
             <br></br><br></br>
             <hr></hr>
@@ -61,11 +65,11 @@ function App() {
           <p id='title'>Contacting Method</p>
             <div>
               <img src={fumoImage} alt="wheres my fucking fumo" id='Side'></img>
-              <p id='content'>If you have considered to hire me, you may DM me in <a id='dicordLink' href='https://discordapp.com/channels/@tokuxo/904626967972806666'>Discord</a> <br></br>
+              <p id='content'>You can DM me in <a id='dicordLink' href='https://discordapp.com/channels/@tokuxo/904626967972806666'>Discord</a> to hire me<br></br>
                 My user name is tokuxo<br></br>
-                <b>Please contain the Followings in your Message</b>
+                <b>Please state the Followings in your Message</b>
                 <ul>
-                  <li>Objective(s)</li>
+                  <li>Model(s)</li>
                   <li>Pricing</li>
                   <li>Due Date</li>
                   <li>Reference(s)</li>
