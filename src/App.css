@@ -1,28 +1,30 @@
 body {
-  background-image: url("Processed.jpg");
+  background-image: url("Processed2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden
 }
 
 div.topMenu {
-  padding: 0.05vw;
+  padding: 0.1vw;
   background-color: darkslategray;
 }
 
 div.topMenu ul {
-  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 div.topMenu ul li {
-  display: inline-block;
+  margin: 0 5vw;
 }
 
 div.topMenu ul li button {
   border: none;
   font-size: 1vw;
-  margin-right: 5.5vw;
-  margin-left: 5.5vw;
+  font-weight: bolder;
   padding: 1vw;
   padding-left: 8vw;
   padding-right: 8vw;
@@ -34,7 +36,7 @@ div.topMenu ul li button {
   border-radius: 2vw;
 }
 
-#redirect {
+#redirect:not(:hover) {
   background-color: darkslategray;
 }
 
@@ -46,12 +48,19 @@ div.topMenu ul li button {
   background-color: rgb(40, 66, 66);
 }
 
-div.redirect {
+div.redirect:not(:hover) {
   display: none;
 }
 
 #title {
   font-size: 2vw;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: center;
+}
+
+#title2 {
+  font-size: 1.5vw;
   font-weight: bold;
   color: aliceblue;
   text-align: center;
@@ -97,11 +106,19 @@ p button:hover {
 
 #scrollable {
   width: 100%;
-  height: 45vw;
+  height: 49.4vw;
   overflow-y: scroll;
 }
 
+::-webkit-scrollbar {
+  background-color: rgba(0, 139, 139, 0.26);
+  width: 1.5vw;
+}
 
+::-webkit-scrollbar-thumb {
+  background: rgb(10, 85, 85);
+  border-radius: 2cm;
+}
 
 .WIP{
   font-size: 1.5vw;
@@ -120,7 +137,7 @@ p button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
+  width: 70vw;
   border-radius: 1cm;
   margin-bottom: 4vw;
 }
